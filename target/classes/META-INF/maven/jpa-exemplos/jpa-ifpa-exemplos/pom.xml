@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>jpa-exemplos</groupId>
+	<artifactId>jpa-ifpa-exemplos</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+			<failOnMissingWebXml>false</failOnMissingWebXml>
+		    <maven.compiler.source>11</maven.compiler.source>
+	        <maven.compiler.target>11</maven.compiler.target>
+	        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<!-- Biblioteca do banco h2database -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>2.1.212</version>
+		</dependency>
+		
+		<!--Bibliotecas do Hibernate -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>5.6.7.Final</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-jpamodelgen</artifactId>
+		    <version>5.6.7.Final</version>
+		    <scope>provided</scope>
+		</dependency>
+
+		<!--Compile time JPA API -->		
+		<dependency>
+		    <groupId>javax.persistence</groupId>
+		    <artifactId>javax.persistence-api</artifactId>
+		    <version>2.2</version>
+		</dependency>
+
+		<!--Runtime JPA implementation -->
+		 <dependency>
+		    <groupId>org.eclipse.persistence</groupId>
+		    <artifactId>org.eclipse.persistence.core</artifactId>
+		    <version>3.0.2</version>
+		</dependency>
+	</dependencies>
+
+
+</project>
